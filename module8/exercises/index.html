@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>First Mobile Example</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <script type="text/javascript" src="js/jquery-2.1.3.min/js"></script>
+  <script type="text/javascript" src="js/jquery.mobile-1.4.5.min/js"></script>
+  <script src="phonegap.js"></script>
+  <script> document.addEventListener("deviceready", onDeviceReady, false);
+  function onDeviceReady({
+      $("#searchButton").on("touchend", function(){
+          var search = $.trim($("#search").val());
+          if(search == "") return;
+
+          var opt = new ContactFindOptions();
+          opt.filter = search;
+          opt.multiple = true;
+          navigator.contacts.find(["displayName", "emails"], foundContacts, errorContacts, opt);
+      });
+
+      foundContacts = function(matches){
+          var s = "";
+          for (var i = 0; i < matches.length; i++) {
+              s += "<li>"+matches[i].displayName+"</li>";
+          }
+          $("#results").html(s);
+          $("#results").listview("refresh");
+      }
+      errorContacts = function(err){
+        navigatior.notification.alert(
+            "Sorry, we had a problem and gave up.", function() {});
+      }
+  }
+  </script>
+
+</head>
+<body>
+<!-- Benjamin Cook
+     assignment?.html
+     INFO2439
+     Thoendel
+     9/4/2019
+-->
+
+</body>
+</html>
