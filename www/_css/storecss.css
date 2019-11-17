@@ -1,0 +1,54 @@
+h1{
+    font-family: Calibri;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.ui-block-a{
+    font-family: Calibri;
+    text-align: center;
+}
+
+.ui-block-b{
+    font-family: Calibri;
+    text-align: center;
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+
+  .topnav a {
+    text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+      background-color: rgb(57, 56, 56);
+
+  }
+
+
+  .footer{
+    display: block;
+    text-align: center;
+}
+
+.slidecontainer {
+    width: 100%; 
+    text-align: center;
+  }
+
+  .ui-content{
+      font-family: Calibri;
+      text-align: center;
+  }
+
+  .class{
+      text-align: center;
+  }

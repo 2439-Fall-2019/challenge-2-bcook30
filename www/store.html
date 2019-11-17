@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Final Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="_css/storecss.css">
+    <link rel="stylesheet" href="_css/themes/ctheme1.css">
+
+
+</head>
+
+<body>
+    <!-- Benjamin Cook
+     FINAL
+     INFO2439
+     Thoendel
+     11/7/2019
+-->
+    <div data-role="page" id="homePage">
+        <div class="topnav">
+            <a data-ajax="false" href="index.html">Home</a>
+            <a data-ajax="false" href="store.html">Meat Inventory</a>
+            <a data-ajax="false" href="survey.html">Survey</a>
+            <a data-ajax="false" href="location.html">Location</a>
+            <a data-ajax="false" href="document.html">Documentation</a>
+        </div>
+        <h1>Meat Inventory</h1>
+        <form method="post" action="mailto:bcook30@mail.mccneb.edu">
+            <div role="main" class="ui-content">
+                <p>Place Your Order</p>
+                <p>Delivery: 5 to 7 business days</p>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><br>Bacon<br><img src="_photos/bacon.png" border="3" alt="Bacon"><br>($7/lb)
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="20" value="0" class="slider" name="bacon">
+                        </div>
+                    </div>
+                    <div class="ui-block-b"><br>Steak<br><img src="_photos/steak.png" border="3"
+                            alt="Steak"><br>($10/lb)
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="20" value="0" class="slider" name="steak">
+                        </div>
+                    </div>
+                    <div class="ui-block-a"><br>Chicken<br><img src="_photos/chicken.png" border="3"
+                            alt="Chicken"><br>($4/lb)
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="20" value="0" class="slider" name="chicken">
+                        </div>
+                    </div>
+                    <div class="ui-block-b"><br>Turkey<br><img src="_photos/turkey.png" border="3"
+                            alt="Turkey"><br>($8/lb)
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="20" value="0" class="slider" name="turkey">
+                        </div>
+                    </div>
+                    <div class="ui-block-a"><br>Pork Chop<br><img src="_photos/porkchop.png" border="3"
+                            alt="Pork Chop"><br>($5/lb)
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="20" value="0" class="slider" name="porkchop">
+                        </div>
+                    </div>
+                    <div class="ui-block-b"><br>Ham<br><img src="_photos/ham.png" border="3" alt="Ham"><br>($6/lb)
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="20" value="0" class="slider" name="ham">
+                        </div>
+                    </div>
+                    <label for="address">Address</label>
+                    <input type="text" value="" class="text" name="address" id="address">
+                </div>
+                <br><input type="submit" value="Submit" />
+            </div>
+            </form>
+    </div>
+    <div data-role="footer" data-position="fixed" class="footer"><a
+            href="https://www.youtube.com/watch?v=fQrKIKuGIYY&list=WL&index=140&t=0s">Contact Us</a>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+h1{
+    font-family: Calibri;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ui-block-a{
+    font-family: Calibri;
+    text-align: center;
+}
+
+.ui-block-b{
+    font-family: Calibri;
+    text-align: center;
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+
+  .topnav a {
+    text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+      background-color: rgb(57, 56, 56);
+
+}       
+
+
+  .footer{
+    display: block;
+    text-align: center;
+}
+
+#homePage{
+    font-family: Calibri;
+    text-align: center;
+}
+
+.radio{
+    text-align: center;
+}
+
+.collapsible {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+
+  .content {
+      text-align: center;
+    display: none;
+    overflow: hidden;
+  }

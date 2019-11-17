@@ -1,0 +1,35 @@
+.ui-block-a{
+    min-width: 25%;
+    max-width: 25%;
+    text-align: center;
+}
+
+.ui-block-b{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Calibri;
+    min-width: 50%;
+}
+
+.ui-block-c{
+    min-width: 25%;
+    max-width: 25%;
+    text-align: center;
+}
+
+.indexbutton{
+    font-family: Calibri;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 50%;
+    
+}
+
+#homePage{
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-image: url('../_photos/indexmeat.png');
+}

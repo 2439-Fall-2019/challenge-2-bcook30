@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Final Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="_css/locationcss.css">
+    <link rel="stylesheet" href="_css/themes/ctheme1.css">
+
+
+</head>
+
+<body>
+    <!-- Benjamin Cook
+     FINAL
+     INFO2439
+     Thoendel
+     11/7/2019
+-->
+    <div data-role="page" id="homePage">
+        <div class="topnav">
+            <a data-ajax="false" href="index.html">Home</a>
+            <a data-ajax="false" href="store.html">Meat Inventory</a>
+            <a data-ajax="false" href="survey.html">Survey</a>
+            <a data-ajax="false" href="location.html">Location</a>
+            <a data-ajax="false" href="document.html">Documentation</a>
+        </div>
+        <h1>Documentation</h1><br><br>
+        <button type="button" class="collapsible">Css Documentation</button>
+        <div class="content">My css and jQuerymobile should be affecting my mobile app alot. <br>
+            They should be setting the proper size for the phone and the design ie: colors and text font. <br>
+            I hope they are working together correctly to get a good looking and functional mobile application.</div>
+        <br><br>
+
+        <button type="button" class="collapsible">Applied Challenge 2, Milestone 2 Wire Frame</button>
+        <div class="content"> <img src="_photos/WireFrame.png" alt="My Wire Frame"></div><br><br>
+
+        <button type="button" class="collapsible">Applied Challenge 2, Milestone 2 User Story</button>
+        <div class="content"> <img src="_photos/UserStory.png" alt="My User Story"></div><br><br>
+
+        <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider">
+                <h3>Applied Challenge Link</h3>
+            <li><a data-ajax="false" href="milestone1.docx">Applied Challenge 2, Milestone 1 Project Scope Document</a>
+            </li>
+            <li><a href="https://github.com/2439-Fall-2019/challenge-2-bcook30">Github Repository</a></li>
+
+        </ul><br><br>
+
+
+        <div data-role="footer" data-position="fixed" class="footer"><a
+                href="https://www.youtube.com/watch?v=fQrKIKuGIYY&list=WL&index=140&t=0s">Contact Us</a></div>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>

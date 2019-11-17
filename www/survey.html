@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Final Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="_css/locationcss.css">
+    <link rel="stylesheet" href="_css/themes/ctheme1.css">
+
+
+</head>
+
+<body>
+    <!-- Benjamin Cook
+     FINAL
+     INFO2439
+     Thoendel
+     11/7/2019
+-->
+    <div data-role="page" id="homePage">
+        <div class="topnav">
+            <a data-ajax="false" href="index.html">Home</a>
+            <a data-ajax="false" href="store.html">Meat Inventory</a>
+            <a data-ajax="false" href="survey.html">Survey</a>
+            <a data-ajax="false" href="location.html">Location</a>
+            <a data-ajax="false" href="document.html">Documentation</a>
+        </div>
+        <h1>Survey</h1>
+        <p>Complete to help improve our service</p>
+        <form method="post" action="mailto:bcook30@mail.mccneb.edu">
+            <div role="main" class="ui-content">
+                <div class="ui-field-contain">
+                    <legend>How do you like the Meat Company App?</legend>
+                    <select name="likeapp" id="likeapp">
+                        <option value="" disabled selected hidden>Select Rating</option>
+                        <option value="service-bad">1-Bad</option>
+                        <option value="service-needwork">2-Needs Work</option>
+                        <option value="service-ok">3-Ok</option>
+                        <option value="service-good">4-Good</option>
+                        <option value="service-excellent">5-Amazing</option>
+                    </select>
+                </div>
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                    <legend>Would you use the Meat Company App every single day of your life?</legend>
+
+                    <input type="radio" name="use" id="Yes" value="Yes">
+                    <label for="Yes">Yes</label>
+
+                    <input type="radio" name="use" id="No" value="No">
+                    <label for="No">No because I hate myself</label>
+                </fieldset>
+                <label for="firstname">
+                    Name
+                    <input id="firstname" type="text" placeholder="First Name" name="name" />
+                </label>
+                <br><input type="submit" value="Submit" />
+            </div>
+        </form>
+
+        <div data-role="footer" data-position="fixed" class="footer"><a
+                href="https://www.youtube.com/watch?v=fQrKIKuGIYY&list=WL&index=140&t=0s">Contact Us</a></div>
+    </div>
+
+
+
+
+</body>
+
+</html>
